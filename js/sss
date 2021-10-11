@@ -1,0 +1,8 @@
+$(window).on("scroll", function() {
+    let pos = $(this).scrollTop()
+    if ( pos >= 600 ) {
+        $("#header").css({ background: "#fff" })
+        $("#headerWrap").css({ position: "sticky", top: 0, color: "#000" })
+    }
+    else $("#headerWrap").css({ position: "relative" })
+})
