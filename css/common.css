@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic+Coding:wght@400;700&display=swap');
 /* 초기화 */
-body, h1, h2, p, ul { margin: 0; padding: 0; }
+body, h1, h2, p, ul, dd { margin: 0; padding: 0; }
 li { list-style: none; }
 a { text-decoration: none; color: #000; }
 .hidden { position: absolute; left: -9999px; }
@@ -57,29 +57,30 @@ body { min-width: 1000px; }
 /* 가맹문의 */
 #content2 { clear: both; height: 600px; border-bottom: 1px solid #000; }
 #franchise { width: 1020px; height: 500px; margin: 0 auto; }
-#franchise > p { position: relative; left: 300px; width: 450px; height: 200px; text-indent: -9999px; background: url(../images/frantitle.png) no-repeat center / contain; }
-#franchise dl { float: left; width: 300px; height: 300px; margin: 0 20px; text-align: center; background: no-repeat center / cover; border-radius: 10px; }
-#franchise dl a { width: 300px; height: 300px; line-height: 300px;  }
-#franchise .franchise1 {  background-image: url(); }
-#franchise .franchise2 { background-image: url(); }
-#franchise .franchise3 { background-image: url(); }
+#franchise > p { position: relative; left: 285px; width: 450px; height: 200px; text-indent: -9999px; background: url(../images/frantitle.png) no-repeat center / contain; }
+#franchise dl { position: relative; float: left; width: 300px; height: 300px; margin: 0 20px; background: no-repeat center / cover; border-radius: 10px; }
+#franchise dt a { display: block; width: 300px; height: 300px; }
+#franchise dl dd { text-align: center; line-height: 60px; }
+#franchise .franchise1 { background-image: url(../1.png); }
+#franchise .franchise2 { background-image: url(../2.png); }
+#franchise .franchise3 { background-image: url(../3.png); }
 
 /* 매장 */
 #content3 { height: 450px; }
-#store { width: 850px; height: 400px; margin: 50px auto; }
-#store dl { float: left; position: relative; width: 400px; height: 400px; }
-#store dl a { display: block; width: 400px; height: 400px;  }
-#store dt { position: absolute; top: 0px; left: 0px; width: 60px; height: 60px; background: no-repeat center / cover; }
+#store { width: 880px; height: 400px; margin: 50px auto; }
+#store dl { float: left; position: relative; width: 360px; height: 400px; }
+#store dl a { display: block; width: 360px; height: 400px;  }
+#store dt { position: absolute; top: 0px; left: 0px; width: 40px; height: 40px; background: no-repeat center / contain; }
 #store dl .dd1 { margin-left: 60px; font-size: 25px; }
-#store dl .dd2 { margin: 60px 0 0 0px; font-size: 60px; }
-#location { margin-right: 50px; }
-#location dt { background-image: url(../store1.png); }
-#monStore dt { background-image: url(../store2.png); }
-#monStore .dd2 { line-height: 100px; }
+#store dl .dd2 { margin: 60px 0 0 0px; font-size: 55px; }
+#location { margin-right: 100px; }
+#location dt { background-image: url(../images/store1.png); }
+#monStore dt { background-image: url(../images/store2.png); }
+#monStore .dd2 { line-height: 80px; }
 /* 고객센터 */
 #content4 { height: 500px; border-top: 1px solid #000; }
 #customer { width: 900px; margin: 0 auto; }
-#customer dl { float: left; width: 250px; height: 300px; margin-top: 100px; border: 1px solid #000; box-sizing: border-box; text-align: center; line-height: 80px; }
+#customer dl { float: left; width: 250px; height: 300px; margin-top: 100px; border: 1px solid #000; box-sizing: border-box; text-align: center; line-height: 60px; }
 #inquiry { margin: 50px 75px; }
 #notice {  }
 #notice p {  }

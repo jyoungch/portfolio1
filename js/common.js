@@ -85,16 +85,16 @@ function down() {
 setInterval(down, 600)
 
 /* 더보기버튼 마우스오버 */
-$("#menu a").hover(function() {
-    $(this).css({ opacity: 0, width: 150, right: 0 })
-           .text("HCS 전체메뉴")
-           .animate({ opacity: 1 })
-}, function() {
-    $(this).stop()
-           .css({ opacity: 0, width: 100, right: 10 })
-           .text("more")
-           .animate({ opacity: 1 })
-})
+// $("#menu a").hover(function() {
+//     $(this).css({ opacity: 0, width: 150, right: 0 })
+//            .text("HCS 전체메뉴")
+//            .animate({ opacity: 1 })
+// }, function() {
+//     $(this).stop()
+//            .css({ opacity: 0, width: 100, right: 10 })
+//            .text("more")
+//            .animate({ opacity: 1 })
+// })
 
 
 
