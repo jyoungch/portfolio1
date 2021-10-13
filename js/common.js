@@ -1,24 +1,29 @@
-/* 네비 */
-// state = 1;
-// $(window).on('scroll', function() {
-//     if ( $(window).scrollTop() >= $("#content1").position().top && state == 1 ) {
-//         state = 0
-//         $("#gnb").css({ top: -50 })
-//                  .animate({ top: 0 })
-//                  .addClass('effect')
+/* 네비 상단 고정 */
+let state = 1;
+$(window).on('scroll', function() {
+    if ( $(window).scrollTop() >= $("#content1").position().top && state == 1 ) {
+        state = 0
+        $("#header").css({ width: "100%", zIndex: 999 })
+                    .animate({ top: 0 })
+                    .addClass('effect')
+        $("#gnb").css({ background: "#fff", height: 80, lineHeight: 4 })
+    }
+    else if ( $(window).scrollTop() < $("#content1").position().top && state == 0 ) {
+        $("#header").removeClass('effect')
+        state = 1;
+    }
+})
 
+/* 서브 네비 */
+$(".snb").hide();
+$("#gnb").hover(function() {
+    $(".snb").stop().slideToggle(200)
+})
 
-//     } else if ( $(window).scrollTop() < $("#content1").position().top && state == 0 ) {
-//         $("#gnb").removeClass('effect')
-//         state = 1;
-//     }
-// })
-
-
-/* 마우스휠 효과 */
-
-
-
+/* 네비 호버 */
+$("#main li a").on("mouseenter", function() {
+    $(this).animate({ color: "#ff0006" }, 100)
+})
 
 /* 이미지 슬라이드 */
 let className;

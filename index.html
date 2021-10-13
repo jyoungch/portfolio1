@@ -45,7 +45,7 @@
                             <li><a href="#">이달의 매장</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">고객센터</a>
+                    <li><a href="#">커뮤니티</a>
                         <ul class="snb">
                             <li><a href="#">공지사항</a></li>
                             <li><a href="#">FAQ</a></li>
@@ -59,9 +59,9 @@
     <main>
         <div id="sliderWrap">
             <ul id="sliderList">
-                <li class="slider1"><video src="images/slider1.mp4" autoplay muted loop><a href="#">해치스가 특별한 이유</a></video></li>
-                <li class="slider2"><a href="#">이달의 메뉴</a></li>
-                <li class="slider3"><a href="#">해피당볶이 밀키트 출시</a></li>
+                <li class="slider1"><video src="images/slider1.mp4" autoplay muted loop><a href="#">해피치즈스마일이 특별한 이유</a></video></li>
+                <li class="slider2"><a href="#"><p>해치스를<br>집에서!<br>해피당볶이 밀키트 출시</p></a></li>
+                <li class="slider3"><a href="#"><p>맛과 감성이<br> <span>남다른</span><br>해치스 가족이 되어주세요</p></a></li>
             </ul>
             <div id="posBtn">
                 <a href="#" class="prev">이전 슬라이드</a>
@@ -75,14 +75,18 @@
         </div>
         <section id="content1">
             <div id="scroll">밑으로 스크롤</div>
-            <h2 class="hidden">메뉴</h2>   
-                <dl id="menu">
-                    <dt class="menu1">new</dt>
-                    <dd>신메뉴 쫄돈</dd>
-                    <dt class="menu2">HOT!</dt>
-                    <dd>떡볶이, 튀김우동, 돈까스, 만두튀김, 해쉬브라운, 통 모짜렐라 튀김, 치즈코로케, 야채튀김, 새우튀김, 고구마튀김, 감자튀김, 한치튀김</dd>
-                    <a href="#">more</a>
-                </dl>     
+            <h2 class="hidden">메뉴</h2>
+            <div id="menuWrap">
+                <dl class="menu menu1">
+                    <dt>NEW</dt>
+                    <dd><a href="#">신메뉴 쫄돈</a></dd>
+                </dl>
+                <dl class="menu menu2">
+                    <dt>HOT!</dt>
+                    <dd><a href="#">떡볶이, 튀김우동, 돈까스, 만두튀김, 해쉬브라운, 통 모짜렐라 튀김, 치즈코로케, 야채튀김, 새우튀김, 고구마튀김, 감자튀김, 한치튀김</a></dd>
+                </dl>
+                <a href="#">more</a>    
+            </div>         
         </section>
         <div class="order">
             <p>익숙하지만 특별한 해치스를 집에서도 즐기세요</p>
@@ -97,15 +101,15 @@
             <div id="franchise">
                 <p>프랜차이즈</p>
                 <dl class="franchise1">
-                    <dt><a href="#"></a></dt>
+                    <dt><a href="#">브랜드소개</a></dt>
                     <dd>브랜드경쟁력</dd>
                 </dl>
                 <dl class="franchise2">
-                    <dt><a href="#"></a></dt>
+                    <dt><a href="#">가맹안내</a></dt>
                     <dd>가맹안내</dd>
                 </dl>
                 <dl class="franchise3">
-                    <dt><a href="#"></a></dt>
+                    <dt><a href="#">FAQ</a></dt>
                     <dd>FAQ</dd>
                 </dl>
             </div>
@@ -114,12 +118,12 @@
             <h2 class="hidden">매장</h2>
             <div id="store">
                 <dl id="location">
-                    <dt><a href="#"></a></dt>
+                    <dt><a href="#">가까운 매장 찾기</a></dt>
                     <dd class="dd1">store locator</dd>
-                    <dd class="dd2">가까운 해치스 매장을<br>찾아보세요</dd>
+                    <dd class="dd2">가까운<br>해치스 매장을<br>찾아보세요</dd>
                 </dl>
                 <dl id="monStore">
-                    <dt><a href="#"></a></dt>
+                    <dt><a href="#">이달의 매장</a></dt>
                     <dd class="dd1">best store</dd>
                     <dd class="dd2">이달의 매장을<br>소개합니다</dd>
                 </dl>
@@ -127,20 +131,45 @@
         </section>
         <section id="content4">
             <h2 class="hidden">커뮤니티</h2>
-            <div id="customer">
-                <dl id="notice">
-                    <dt>notice</dt>
-                    <dd><a href="#">더보기</a></dd>
-                </dl>
-                <dl id="inquiry">
-                    <dt>고객의 소리</dt>
-                    <dd><a href="#">더보기</a></dd>
-                </dl>
+            <div id="comWrap">
+                <article class="com com1">
+                    <a href="#">
+                        <h3>공지사항</h3>
+                        <p>해치스의 소식을 전해드립니다</p>
+                    </a>
+                </article>
+                <article class="com com2">
+                    <a href="#">
+                        <h3>고객의 소리</h3>
+                        <p>해치스는 고객과 함께 만들어갑니다</p>
+                    </a>
+                </article>
+                <div class="com com3">
+                    <a href="#">
+                        <h3>고객센터</h3>
+                        <p>1522-7677<br>상담가능시간 09:00-18:00</p>
+                    </a>   
+                </div>
             </div>
+                <!-- <dl class="com1">
+                    <dt><a href="#"><h3>공지사항</h3></a></dt>
+                    <dd><p>해치스 소식을 전해드립니다</p></dd>
+                </dl>
+                <dl class="com2">
+                    <dt><a href="#"><h3>고객의 소리</h3></a></dt>
+                    <dd><p>해치스는 고객과 함께 만들어갑니다</p></dd> 
+                </dl>
+                <dl class="com3">
+                    <dt><a href="#"><h3>고객센터</h3></a></dt>
+                    <dd><p>1522-7677<br>상담가능시간 09:00-18:00</p></dd>    
+                </dl>     -->
         </section>
-        <a href=""></a>
-        <a href="#" id="topBtn">top버튼</a>
-        <video src="images/line1920.mp4" autoplay muted loop></video>
+        <div id="fxBtn">
+            <a href="#" id="frBtn">창업문의버튼</a>
+            <a href="#" id="snsBtn">sns버튼</a>
+            <a href="#" id="topBtn">top버튼</a>
+        </div>
+        <video src="images/line1920.mp4" autoplay muted loop>해피치즈로고 슬라이드</video>
     </main>
     <footer id="footer">
         <div id="info">
@@ -159,8 +188,3 @@
     </footer>
 </body>
 </html>
-
-<!-- 
-    적당한 이미지 찾기
-    이미지슬라이드
- -->
