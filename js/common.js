@@ -84,10 +84,26 @@ $("#numBtn a").on("click", function() {
 
 /* 스크롤버튼 */
 function down() {
-    $("#scroll").animate({ top: 70 }, 600)
-    .animate({ top: 60 }, 600)
+    $("#scroll").animate({ top: 90 }, 600)
+    .animate({ top: 80 }, 600)
 }
 setInterval(down, 600)
+
+/* 메뉴 섹션 탭 */
+
+
+
+
+// $(window).on("scroll", function() {
+//     let pos = $("#content2").position().top+200;
+//     if ( $(window).scrollTop() >= pos ) {
+//         $("#content3 #store #locator span").css({ textIndent: -500 })
+//                         .animate({ opacity: 1, textIndent: 0 }, 200)
+//         console.log($(window).scrollTop())
+//     }
+// })
+
+
 
 /* 더보기버튼 마우스오버 */
 // $("#menu a").hover(function() {

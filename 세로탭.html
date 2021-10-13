@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>세로탭</title>
+    <style>
+      ul { position: relative; width: 1000px; height: 500px; border: 1px solid #000; }
+      li { width: 200px; height: 100px; border: 1px solid #000;   }
+      dl dd { width: 700px; height: 300px; border: 1px solid #000;
+            position: absolute; top: 50px; right: 50px; }
+    </style>
+  </head>
+  <body>
+    <ul><!-- position: relative -->
+      <li> <!-- 넓이 높이 적용 -->
+        <dl>
+          <dt>1</dt>
+          <dd>2</dd><!-- position: absolute -->
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt>11</dt>
+          <dd>22</dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt>111</dt>
+          <dd>222</dd>
+        </dl>
+      </li>
+    </ul>
+  </body>
+</html>
