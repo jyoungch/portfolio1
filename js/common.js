@@ -91,9 +91,14 @@ setInterval(down, 600)
 
 /* 메뉴 섹션 탭 */
 
+$("#menuWrap li dt").on('click', function() {
+    $("#menuWrap li dd").hide();
+    $(this).next().show();
+    $("#menuWrap li").removeClass('on')
+    $(this).parent().addClass("on")
+  })
 
-
-
+// 매장 텍스트 애니메이션
 // $(window).on("scroll", function() {
 //     let pos = $("#content2").position().top+200;
 //     if ( $(window).scrollTop() >= pos ) {
@@ -103,19 +108,6 @@ setInterval(down, 600)
 //     }
 // })
 
-
-
-/* 더보기버튼 마우스오버 */
-// $("#menu a").hover(function() {
-//     $(this).css({ opacity: 0, width: 150, right: 0 })
-//            .text("HCS 전체메뉴")
-//            .animate({ opacity: 1 })
-// }, function() {
-//     $(this).stop()
-//            .css({ opacity: 0, width: 100, right: 10 })
-//            .text("more")
-//            .animate({ opacity: 1 })
-// })
 
 
 
