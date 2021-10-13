@@ -31,8 +31,8 @@ body { min-width: 1000px; }
 #sliderList li p { position: absolute; font-size: 60px; height: 900px; }
 #sliderList .slider1 { overflow: hidden; position: relative; }
 #sliderList .slider1 video { position: absolute; top: -50px; left: calc(50% - 940px); min-width: 1920px; min-height: 900px; }
-#sliderList .slider2 { position:absolute; top: 80px; left: 0; height: 900px; background-image: url(../그림1.jpg);}
-#sliderList .slider2 p { line-height: 90px; top: 13%; left: 150px; color: #fff; }
+#sliderList .slider2 { height: 900px; background-image: url(../그림1.jpg);}
+#sliderList .slider2 p { line-height: 90px; top: 20%; left: 150px; color: #fff; }
 /* #sliderList .slider2::before { content: ""; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.2)  } */
 #sliderList .slider3 p { top: 60%; left: 150px; color: #fff; }
 #sliderList .slider3 { position: relative; background-image: url(../images/slider3.jpg);}
